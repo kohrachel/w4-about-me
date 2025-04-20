@@ -24,7 +24,7 @@ function App() {
 
         {/* Rachel-pedia */}
         <div className="flex flex-col items-start justify-center">
-          <p className="text-xl font-bold">Rachel-pedia</p>
+          <p className="text-xl font-serif">Rachel-pedia</p>
           <p className="text-xs">rachel's free encyclopedia</p>
         </div>
 
@@ -48,7 +48,7 @@ function App() {
 
       {/* // top bar (name etc) */}
       <div className="w-full h-16 p-5 m-0 flex items-center gap-5 justify-between">
-        <h1 className="text-xl font-bold">Rachel Koh</h1>
+        <p className="text-4xl font-serif">Rachel Koh</p>
 
         <div className="flex items-center gap-2">
           <input
@@ -57,7 +57,8 @@ function App() {
             placeholder="no flag here"
             onKeyDown={(e) => {
               if (e.key === "Enter") {
-                if (e.target.value === "rachel{i_found_flag}") {
+                const target = e.target as HTMLInputElement;
+                if (target.value === "rachel{i_found_flag}") {
                   alert("Correct! You found flag 2!");
                 } else {
                   alert("rachel{find_the_flag}");
