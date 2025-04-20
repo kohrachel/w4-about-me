@@ -140,7 +140,7 @@ function App() {
           <p className="text-xl font-bold">Rachel Koh</p>
           <div className="w-full h-full">
             <img src="/rachel.jpeg" alt="Rachel Koh" />
-            <p className="text-xs italic">Koh in 2024</p>
+            <p className="text-xs">Koh in 2024</p>
           </div>
 
           <div className="w-full h-full grid grid-cols-2 gap-1 text-left">
