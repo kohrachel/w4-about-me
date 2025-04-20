@@ -71,7 +71,16 @@ function App() {
       {/* // for other uses, see */}
       <div className="w-full h-8 p-5 m-0 flex items-center gap-5 italic">
         <p>
-          for other uses, see <a href="/">rachel koh (disambiguation)</a>.
+          for other uses, see{" "}
+          <a
+            className="cursor-pointer"
+            onClick={() => {
+              alert("you found flag 3");
+            }}
+          >
+            rachel koh (disambiguation)
+          </a>
+          .
         </p>
       </div>
 
